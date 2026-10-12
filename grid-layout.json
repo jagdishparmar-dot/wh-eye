@@ -262,5 +262,25 @@
         ]
       }
     ]
+  },
+  {
+    "id": "GroupH",
+    "colorClass": "border-green-700/50 bg-green-900/20",
+    "blocks": [
+      {
+        "rows": [
+          { "prefix": "H", "start": 101, "end": 150, "direction": "ltr" },
+          { "prefix": "H", "start": 100, "end": 51, "direction": "ltr" },
+          { "prefix": "H", "start": 1, "end": 50, "direction": "ltr" }
+        ]
+      },
+      {
+        "rows": [
+          { "prefix": "H", "start": 200, "end": 151, "direction": "ltr" },
+          { "prefix": "H", "start": 201, "end": 250, "direction": "ltr" },
+          { "prefix": "H", "start": 300, "end": 251, "direction": "ltr" }
+        ]
+      }
+    ]
   }
 ]

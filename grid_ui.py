@@ -11,7 +11,7 @@ from pathlib import Path
 
 import psycopg
 from dotenv import load_dotenv
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request, send_from_directory
 from psycopg.rows import dict_row
 from werkzeug.middleware.proxy_fix import ProxyFix
 
@@ -250,11 +250,24 @@ def create_app() -> Flask:
     if os.environ.get("TRUST_PROXY", "1").lower() in ("1", "true", "yes"):
         app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1)
 
+    @app.after_request
+    def noindex_headers(response):
+        response.headers["X-Robots-Tag"] = "noindex, nofollow"
+        return response
+
+    @app.get("/favicon.ico")
+    def favicon():
+        return send_from_directory(
+            app.static_folder,
+            "favicon.svg",
+            mimetype="image/svg+xml",
+        )
+
     @app.before_request
     def require_session():
         if auth_disabled():
             return None
-        if request.endpoint in ("health", "static"):
+        if request.endpoint in ("health", "static", "favicon"):
             return None
         if has_valid_session_cookie(request.cookies):
             return None

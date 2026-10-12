@@ -1,0 +1,21 @@
+# Optional: deploy with Compose on Coolify (or docker compose up).
+# Hard caps for CPU/RAM; tune limits to match your server.
+services:
+  wh-eye:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    cpus: 0.5
+    mem_limit: 512m
+    memswap_limit: 512m
+    pids_limit: 100
+    environment:
+      WEB_CONCURRENCY: "1"
+      GUNICORN_THREADS: "2"
+      GUNICORN_TIMEOUT: "120"
+      GUNICORN_MAX_REQUESTS: "500"
+      MALLOC_ARENA_MAX: "2"
+      TRUST_PROXY: "1"
+    ports:
+      - "${PORT:-8000}:8000"
