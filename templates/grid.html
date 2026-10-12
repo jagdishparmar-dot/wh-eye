@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warehouse Eye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="control-bar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <h1>Warehouse Eye</h1>
+      </div>
+
+      <div class="stats-inline" aria-label="Summary">
+        <span class="stat-pill"><em>Total</em> {{ total_slots }}</span>
+        <span class="stat-pill danger"><em>Blocked</em> {{ blocked_on_grid }}</span>
+        <span class="stat-pill free"><em>Free</em> {{ free_on_grid }}</span>
+        <span class="stat-pill"><em>Other</em> {{ other_slots }}</span>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="M20 20l-3-3"></path>
+          </svg>
+          <input id="slot-search" type="search" placeholder="Slot ( / )" autocomplete="off" />
+        </label>
+        <button type="button" class="chip active" id="filter-blocked" data-filter="blocked" title="Toggle blocked">
+          <span class="chip-dot blocked"></span>
+        </button>
+        <button type="button" class="chip active" id="filter-free" data-filter="free" title="Toggle free">
+          <span class="chip-dot free"></span>
+        </button>
+        <button type="button" class="chip active" id="filter-other" data-filter="other" title="Toggle other">
+          <span class="chip-dot other"></span>
+        </button>
+      </div>
+    </header>
+
+    {% if free_error %}
+    <div class="alert" role="alert">{{ free_error }}</div>
+    {% endif %}
+
+    <main class="map-viewport">
+      <div class="map-stack">
+        {% for group in groups %}
+        <section
+          class="group-card"
+          style="border-color: {{ group.style.border }};"
+          aria-labelledby="title-{{ group.id }}"
+        >
+          <div class="group-head" style="background: {{ group.style.background }};">
+            <div class="group-title" id="title-{{ group.id }}">
+              <span style="color: {{ group.style.header }};">{{ group.id | replace('Group', '') }}</span>
+            </div>
+            <div class="group-meta">
+              <span>{{ group.slot_count }}</span>
+              <span class="meta-blocked">{{ group.blocked_count }}</span>
+              <span class="meta-free">{{ group.free_count }}</span>
+            </div>
+          </div>
+          <div class="group-body">
+            {% for block in group.blocks %}
+            <div class="block">
+              {% for row in block.rows %}
+              <div class="row" data-direction="{{ row.direction }}">
+                {% for cell in row.cells %}
+                <div
+                  class="cell{% if cell.blocked %} blocked{% elif cell.free %} free{% endif %}"
+                  data-label="{{ cell.label }}"
+                  title="{% if cell.blocked %}Blocked — {% elif cell.free %}Free — {% endif %}{{ cell.label }}"
+                >{{ cell.label }}</div>
+                {% endfor %}
+              </div>
+              {% endfor %}
+            </div>
+            {% endfor %}
+          </div>
+        </section>
+        {% endfor %}
+      </div>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+</body>
+</html>

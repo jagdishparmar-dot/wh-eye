@@ -1,0 +1,852 @@
+[
+  {
+    "location_id": "C172B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C228B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C284B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C628B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C683B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C740F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C740B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C629B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A115B",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A170F",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G151F",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G200F",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G551F",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G601F",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G151B",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G200B",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D116F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D171F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D458F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D570F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D115B",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D171B",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D570B",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E101F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E200F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E401F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E500F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E149B",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E100B",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E500B",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F151F",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F249F",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F552F",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F649F",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F200B",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F249B",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F551B",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F649B",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F152F",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F200F",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F250F",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F600F",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F601F",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F650F",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F201B",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F151B",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A227B",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G551B",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D172F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E100F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C230F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C685B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C173F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C173B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C172F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C229F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C229B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C230B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C228F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C285F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C285B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C284F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C629F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C628F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C684F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C684B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C685F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C686F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C686B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C683F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C741F",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "C741B",
+    "chamber_code": "C",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D116B",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D115F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D173F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D170F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D227F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D514F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D513F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D512F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D457F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D569F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D514B",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D170B",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D569B",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E150F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E151F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E152F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E149F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E449F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E450F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E451F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E452F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E501F",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E101B",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E150B",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E452B",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E501B",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F152B",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F250B",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F552B",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F600B",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F601B",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F650B",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F201F",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "F551F",
+    "chamber_code": "F",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "E451B",
+    "chamber_code": "E",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "D228F",
+    "chamber_code": "D",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G600B",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G152F",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G201F",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G249F",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G552F",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G649F",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G650F",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G201B",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G250B",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G552B",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G601B",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G649B",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G650B",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G250F",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G600F",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G152B",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "G249B",
+    "chamber_code": "G",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B172B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B227B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B284F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B628B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B628F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B629B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B683B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B740B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A170B",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B284B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B629F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A115F",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A116B",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A116F",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A171B",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A171F",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A172B",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A172F",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A173B",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A173F",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A227F",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A228B",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "A228F",
+    "chamber_code": "A",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B172F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B173B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B173F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B227F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B228B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B228F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B229B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B229F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B230B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B230F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B285B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B285F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B683F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B684B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B684F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B685B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B685F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B686B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B686F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B740F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B741B",
+    "chamber_code": "B",
+    "status": "Blocked"
+  },
+  {
+    "location_id": "B741F",
+    "chamber_code": "B",
+    "status": "Blocked"
+  }
+]

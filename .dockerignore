@@ -1,0 +1,13 @@
+.venv
+.env
+.env.*
+!.env.example
+__pycache__
+*.py[cod]
+.git
+.gitignore
+*.md
+free-locations*.csv
+check_db.py
+.cursor
+terminals
