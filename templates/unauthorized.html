@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warehouse Eye — Not authenticated</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+  <style>
+    .auth-screen {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      min-height: calc(100vh - var(--control-h));
+    }
+    .auth-card {
+      max-width: 420px;
+      width: 100%;
+      padding: 1.25rem 1.35rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--bg-elevated);
+      text-align: center;
+    }
+    .auth-card h2 {
+      margin: 0.75rem 0 0.35rem;
+      font-size: 1.1rem;
+    }
+    .auth-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.875rem;
+      line-height: 1.45;
+    }
+    .auth-code {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      color: #fca5a5;
+      font-family: var(--mono, monospace);
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="control-bar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <h1>Warehouse Eye</h1>
+      </div>
+    </header>
+    <main class="auth-screen">
+      <div class="auth-card">
+        <div class="brand-mark" style="margin: 0 auto;" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 9v4"/><path d="M12 17h.01"/>
+            <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+          </svg>
+        </div>
+        <h2>Not authenticated</h2>
+        <p>
+          Sign in at <strong>{{ auth_domain }}</strong> first.
+          <strong>{{ app_host }}</strong> needs the shared
+          <code>__session</code> cookie from your Intoship account.
+        </p>
+        <p style="margin-top: 1rem;">
+          <a href="{{ login_url }}">Open {{ auth_domain }}</a>
+        </p>
+        <p class="auth-code">401 — missing or invalid session</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -11,8 +11,9 @@ from pathlib import Path
 
 import psycopg
 from dotenv import load_dotenv
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, request
 from psycopg.rows import dict_row
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 APP_DIR = Path(__file__).resolve().parent
 LAYOUT_PATH = APP_DIR / "grid-layout.json"
@@ -221,6 +222,23 @@ def count_free_on_grid(
     return count_keys_on_grid(groups, free_keys - blocked_keys)
 
 
+def auth_disabled() -> bool:
+    return os.environ.get("AUTH_DISABLED", "").lower() in ("1", "true", "yes")
+
+
+def session_cookie_name() -> str:
+    return os.environ.get("SESSION_COOKIE_NAME", "__session")
+
+
+def has_valid_session_cookie(cookies) -> bool:
+    value = cookies.get(session_cookie_name())
+    return bool(value and str(value).strip())
+
+
+def auth_login_url() -> str:
+    return os.environ.get("AUTH_LOGIN_URL", "https://intoship.cloud").strip()
+
+
 def create_app() -> Flask:
     configure_logging()
     env_file = APP_DIR / ".env"
@@ -228,6 +246,27 @@ def create_app() -> Flask:
         load_dotenv(env_file)
 
     app = Flask(__name__)
+
+    if os.environ.get("TRUST_PROXY", "1").lower() in ("1", "true", "yes"):
+        app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1)
+
+    @app.before_request
+    def require_session():
+        if auth_disabled():
+            return None
+        if request.endpoint in ("health", "static"):
+            return None
+        if has_valid_session_cookie(request.cookies):
+            return None
+        return (
+            render_template(
+                "unauthorized.html",
+                login_url=auth_login_url(),
+                auth_domain="intoship.cloud",
+                app_host="wh-eye.intoship.cloud",
+            ),
+            401,
+        )
 
     @app.get("/health")
     def health():
